@@ -5,10 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="application-name" content="AI Character Editor">
 	<meta name="description" content="Create, edit and convert AI character files for CharacterAI, Pygmalion, Text Generation and TavernAI">
-	<meta name="version" content="0.5.1a">
-	<meta name="revision" content="2023-07-29">
-	<meta name="author" content="ZoltanAI, AVAKSon">
-	<meta name="contact" content="Zoltan#8287 and AVAKSon#0498 on Discord">
+	<meta name="version" content="0.6">
+	<meta name="revision" content="2023-11-07">
+	<meta name="author" content="ZoltanAI, AVAKSon, now FunkEngine">
+	<meta name="contact" content="Zoltan#8287, AVAKSon#0498, FunkEngine#7344 on Discord">
 	<meta name="license" content="GNU-GPLv3">
 	<meta name="color-scheme" content="light dark" />
 	<meta name="theme-color" media="(prefers-color-scheme: light)" content="#F8F9FA" />
@@ -16,7 +16,7 @@
 	<meta name="twitter:card" content="summary">
 	<meta property="og:title" content="AI Character Editor">
 	<meta property="og:description" content="Create, edit and convert AI character files for CharacterAI, Pygmalion, Text Generation and TavernAI">
-	<meta property="og:url" content="https://AVAKSon.github.io/character-editor/">
+	<meta property="og:url" content="https://funkengine2023.github.io/">
 	<meta property="og:type" content="website">
 	<title>AI Character Editor</title>
 	<script>
@@ -101,7 +101,7 @@
 	<main class="flex-shrink-0">
 		<div class="container pt-4 pb-5">
 			<h1 class="display-1 text-center">AI Character Editor</h1>
-			<p class="my-0 lead text-center">Create, edit and convert to and from <a href="https://beta.character.ai/" target="_blank">CharacterAI</a> <a href="https://github.com/irsat000/CAI-Tools" target="_blank">dumps</a>, <a href="https://github.com/PygmalionAI/gradio-ui" target="_blank">Pygmalion</a>, <a href="https://github.com/oobabooga/text-generation-webui" target="_blank">Text Generation</a> and <a href="https://github.com/Cohee1207/SillyTavern" target="_blank">TavernAI</a> formats easily</p>
+			<p class="my-0 lead text-center">Create, edit and convert to and from <a href="https://beta.character.ai/" target="_blank">CharacterAI</a> <a href="https://github.com/irsat000/CAI-Tools" target="_blank">dumps</a>, <a href="https://github.com/PygmalionAI/gradio-ui" target="_blank">Pygmalion</a>, <a href="https://github.com/oobabooga/text-generation-webui" target="_blank">Text Generation</a>, <a href="https://github.com/TavernAI/TavernAI" target="_blank">TavernAI</a>, and <a href="https://github.com/Cohee1207/SillyTavern" target="_blank">SillyTavern</a> formats easily</p>
 			<p class="lead text-center">Supports both JSON and Character Card image files</p>
 
 			<button id="theme" class="btn btn-outline-secondary position-absolute top-0 end-0 m-4">
@@ -511,7 +511,7 @@
 		<div class="container">
 			<div class="row text-body-secondary user-select-none">
 				<div class="col">
-					<span data-bs-toggle="tooltip" data-bs-title="Get in contact on Discord for any suggestions or help!">Made with &#128166; by <code class="user-select-all">Zoltan#8287</code> and forked by <code class="user-select-all">AVAKSon#0498</code></span>
+					<span data-bs-toggle="tooltip" data-bs-title="Get in contact on Discord for any suggestions or help!">Made with &#128166; by <code class="user-select-all">Zoltan#8287</code> and forked by <code class="user-select-all">AVAKSon#0498</code> Subsequently maintained by <code class="user-select-all">FunkEngine#7344</code></span>
 				</div>
 
 				<div class="col text-end">
@@ -530,7 +530,7 @@
 
 				<div class="modal-body">
 					<p>An unexpected error has occurred, sorry!</p>
-					<p>This tool is still in development and you can help improve it by sending the error message below and your file (if applicable) to <code class="user-select-all">AVAKSon#0498</code> on Discord or by reporting it on <a href="https://github.com/AVAKSon/character-editor" target="_blank">GitHub</a>.</p>
+					<p>This tool is still in development and you can help improve it by sending the error message below and your file (if applicable) to <code class="user-select-all">AVAKSon#0498</code> on Discord or by reporting it on <a href="https://github.com/FunkEngine2023" target="_blank">GitHub</a>.</p>
 					<pre class="mb-0 p-3 border bg-body-secondary rounded"><code id="error-message" class="user-select-all"></code></pre>
 				</div>
 
@@ -553,7 +553,7 @@
 
 					<div id="warning-modal-collapse" class="collapse">
 						<hr>
-						<p>If you think you have mistakenly received this warning, please send the error message below and your file to <code class="user-select-all">AVAKSon#0498</code> on Discord or report it on <a href="https://github.com/AVAKSon/character-editor" target="_blank">GitHub</a>.</p>
+						<p>If you think you have mistakenly received this warning, please send the error message below and your file to <code class="user-select-all">AVAKSon#0498</code> on Discord or report it on <a href="https://github.com/FunkEngine2023" target="_blank">GitHub</a>.</p>
 						<pre class="mb-0 p-3 border bg-body-secondary rounded"><code id="warning-modal-details" class="user-select-all"></code></pre>
 					</div>
 				</div>
@@ -575,7 +575,7 @@
 		//fixer for the page
 
 		const APP = 'AI Character Editor';
-		const VER = '0.5.1a';
+		const VER = '0.6';
 
 		Element.prototype.show = function () {
 			this.classList.remove('d-none');
@@ -1905,7 +1905,7 @@
 					tool: {
 						name: APP,
 						version: VER,
-						url: 'https://AVAKSon.github.io/character-editor/'
+						url: 'https://funkengine2023.github.io/'
 					}
 				}
 			};
